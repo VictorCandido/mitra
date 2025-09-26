@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -7,12 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded bg-accent">
-                <span className="text-sm font-bold text-accent-foreground">MT</span>
-              </div>
-              <span className="text-xl font-bold">Mitra</span>
-            </div>
+            <Image src="/mitra-logo.png" alt="Mitra" width={192} height={192} />
             <p className="text-sm text-primary-foreground/80 text-pretty">
               Especialistas em terraplenagem com mais de 15 anos de experiência, transformando terrenos em fundações
               perfeitas para seus projetos.

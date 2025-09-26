@@ -1,36 +1,48 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Truck, Mountain, Wrench, Shield, Clock, Award } from "lucide-react"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { Building, Clock, Drill, Layout, Mountain, Truck, Warehouse } from "lucide-react"
 
 const services = [
   {
     icon: Mountain,
-    title: "Terraplenagem Completa",
-    description: "Nivelamento, corte e aterro de terrenos para preparação de fundações e construções.",
+    title: "Aterros e Escavações",
+    description: "Venda de máquinas para terraplenagem e construção civil.",
   },
   {
     icon: Truck,
-    title: "Movimentação de Terra",
-    description: "Transporte e remoção de terra com equipamentos de última geração e equipe especializada.",
+    title: "Comércio de Máquinas",
+    description: "Venda de máquinas para terraplenagem e construção civil.",
   },
   {
-    icon: Wrench,
-    title: "Preparação de Terrenos",
-    description: "Limpeza, desmatamento e preparação completa do terreno para início das obras.",
+    icon: Warehouse,
+    title: "Fornecimento de Materiais",
+    description: "Materiais de qualidade para obras de terraplenagem e construção.",
   },
   {
-    icon: Shield,
-    title: "Contenção de Encostas",
-    description: "Soluções em contenção e estabilização de taludes para máxima segurança.",
+    icon: Building,
+    title: "Infraestrutura",
+    description: "Serviços de infraestrutura para obras seguras e duradouras.",
   },
   {
     icon: Clock,
-    title: "Drenagem e Pavimentação",
-    description: "Sistemas de drenagem e pavimentação para acesso e escoamento adequado.",
+    title: "Locações de Máquinas",
+    description: "Locação de máquinas revisadas para terraplenagem e construção.",
   },
   {
-    icon: Award,
-    title: "Consultoria Técnica",
-    description: "Análise técnica do terreno e consultoria especializada para seu projeto.",
+    icon: Drill,
+    title: "Perfurações",
+    description: "Perfurações de solo precisas para fundações e projetos de engenharia.",
+  },
+  {
+    icon: Layout,
+    title: "Platôs",
+    description: "Construção de platôs estáveis e nivelados para diferentes tipos de obra.",
   },
 ]
 
@@ -48,7 +60,31 @@ export function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <Carousel className="hidden md:block">
+          <CarouselContent>
+            {services.map((service, index) => (
+              <CarouselItem className="xl:basis-1/4 lg:basis-1/3 md:basis-1/2 basis-full" key={index}>
+                <Card className="hover:shadow-lg transition-shadow duration-300">
+                  <CardHeader>
+                    <div className="flex items-center space-x-3">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+                        <service.icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">{service.title}</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-base leading-relaxed">{service.description}</CardDescription>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+
+        <div className="grid grid-cols-1 md:hidden gap-6 ">
           {services.map((service, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
               <CardHeader>

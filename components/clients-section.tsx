@@ -30,8 +30,8 @@ const testimonials = [
 
 const clients = [
   {
-    name: "Construtora Horizonte",
-    logo: "/construtora-horizonte-logo-empresa-constru--o.jpg",
+    name: "MacLucer",
+    logo: "/maclucer.png",
   },
   {
     name: "Incorporadora Prime",
