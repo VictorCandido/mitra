@@ -46,9 +46,6 @@ export function Header() {
             <button onClick={() => scrollToSection("portfolio")} className="transition-colors hover:text-primary">
               Portfólio
             </button>
-            <button onClick={() => scrollToSection("clientes")} className="transition-colors hover:text-primary">
-              Clientes
-            </button>
             <button onClick={() => scrollToSection("contato")} className="transition-colors hover:text-primary">
               Contato
             </button>
@@ -112,12 +109,6 @@ export function Header() {
                 className="block py-2 text-lg font-medium transition-colors hover:text-primary w-full text-left"
               >
                 Portfólio
-              </button>
-              <button
-                onClick={() => scrollToSection("clientes")}
-                className="block py-2 text-lg font-medium transition-colors hover:text-primary w-full text-left"
-              >
-                Clientes
               </button>
               <button
                 onClick={() => scrollToSection("contato")}

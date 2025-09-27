@@ -12,12 +12,7 @@ const services = [
   {
     icon: Mountain,
     title: "Aterros e Escavações",
-    description: "Venda de máquinas para terraplenagem e construção civil.",
-  },
-  {
-    icon: Truck,
-    title: "Comércio de Máquinas",
-    description: "Venda de máquinas para terraplenagem e construção civil.",
+    description: "Preparação de terrenos com aterros e escavações para fundações e obras.",
   },
   {
     icon: Warehouse,
@@ -44,12 +39,17 @@ const services = [
     title: "Platôs",
     description: "Construção de platôs estáveis e nivelados para diferentes tipos de obra.",
   },
+  {
+    icon: Truck,
+    title: "Comércio de Máquinas",
+    description: "Venda de máquinas para terraplenagem e construção civil.",
+  },
 ]
 
 export function ServicesSection() {
   return (
     <section id="servicos" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-4">
+      <div className="container px-4 mx-auto max-w-screen-xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-balance mb-4 md:text-4xl lg:text-5xl">
             Nossos Serviços Especializados
@@ -63,7 +63,7 @@ export function ServicesSection() {
         <Carousel className="hidden md:block">
           <CarouselContent>
             {services.map((service, index) => (
-              <CarouselItem className="xl:basis-1/4 lg:basis-1/3 md:basis-1/2 basis-full" key={index}>
+              <CarouselItem className="lg:basis-1/3 md:basis-1/2 basis-full" key={index}>
                 <Card className="hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
                     <div className="flex items-center space-x-3">

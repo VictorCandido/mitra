@@ -1,7 +1,19 @@
+'use client';
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle } from "lucide-react"
 
 export function HeroSection() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
+    }
+  }
+
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div
@@ -27,14 +39,15 @@ export function HeroSection() {
           </p>
 
           <div className="mb-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-              Solicitar Orçamento Gratuito
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" onClick={() => scrollToSection("contato")}>
+              Solicitar Orçamento
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-black bg-transparent"
+              onClick={() => scrollToSection("portfolio")}
             >
               Ver Nossos Projetos
             </Button>

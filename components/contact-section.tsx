@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { Clock, Mail, MapPin, Phone } from "lucide-react"
+import MapSection from "./map-section"
 
 export function ContactSection() {
   return (
@@ -43,19 +44,15 @@ export function ContactSection() {
           </Card>
 
           {/* Informações de Contato */}
-          <div className="space-y-6">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-3">
             <Card>
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
+              <CardContent className="p-6 h-full">
+                <div className="flex items-center space-x-4 h-full">
                   <MapPin className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Endereço</h3>
                     <p className="text-muted-foreground">
-                      Rua das Máquinas, 1234
-                      <br />
-                      Distrito Industrial
-                      <br />
-                      São Paulo - SP, 01234-567
+                      Itupeva - SP
                     </p>
                   </div>
                 </div>
@@ -63,15 +60,13 @@ export function ContactSection() {
             </Card>
 
             <Card>
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
+              <CardContent className="p-6 h-full">
+                <div className="flex items-center space-x-4 h-full">
                   <Phone className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Telefones</h3>
                     <p className="text-muted-foreground">
-                      (11) 99999-9999 - WhatsApp
-                      <br />
-                      (11) 3333-4444 - Comercial
+                      (11) 94762-7807 - WhatsApp
                     </p>
                   </div>
                 </div>
@@ -79,15 +74,13 @@ export function ContactSection() {
             </Card>
 
             <Card>
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
+              <CardContent className="p-6 h-full">
+                <div className="flex items-center space-x-4 h-full">
                   <Mail className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">E-mail</h3>
                     <p className="text-muted-foreground">
-                      contato@Mitra.com.br
-                      <br />
-                      orcamento@Mitra.com.br
+                      mitraterraplanagem@gmail.com
                     </p>
                   </div>
                 </div>
@@ -95,17 +88,15 @@ export function ContactSection() {
             </Card>
 
             <Card>
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
+              <CardContent className="p-6 h-full">
+                <div className="flex items-center space-x-4 h-full">
                   <Clock className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Horário de Funcionamento</h3>
                     <p className="text-muted-foreground">
-                      Segunda a Sexta: 7h às 18h
+                      Segunda a Sexta: 7h às 17h
                       <br />
-                      Sábado: 7h às 12h
-                      <br />
-                      Domingo: Fechado
+                      Sábado e Domingo: Fechado
                     </p>
                   </div>
                 </div>
@@ -117,10 +108,8 @@ export function ContactSection() {
         {/* Mapa */}
         <div className="mt-12">
           <Card>
-            <CardContent className="p-0">
-              <div className="h-64 bg-muted rounded-lg flex items-center justify-center">
-                <p className="text-muted-foreground">Mapa da localização da empresa</p>
-              </div>
+            <CardContent className="h-72">
+              <MapSection />
             </CardContent>
           </Card>
         </div>
