@@ -22,7 +22,7 @@ export async function sendContactEmail(values: FormData) {
     
         const { data, error } = await resend.emails.send({
           from: 'Terraplenagem Mitra <onboarding@resend.dev>',
-          to: ['victorev@outlook.com'],
+          to: [String(process.env.RESEND_EMAIL)],
           subject: 'Nova mensagem de Contato',
           react: ContactEmailTemplate({  ...values, submittedAt }),
           attachments: [
