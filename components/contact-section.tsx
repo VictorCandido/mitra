@@ -1,8 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { Card, CardContent } from "@/components/ui/card"
 import { Clock, Mail, MapPin, Phone } from "lucide-react"
+import ContactForm from "./contact-form"
 import MapSection from "./map-section"
 
 export function ContactSection() {
@@ -19,29 +17,7 @@ export function ContactSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Formulário de Contato */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-2xl">Solicite seu Orçamento</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <Input placeholder="Seu nome completo" />
-                <Input placeholder="Sua empresa" />
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <Input type="email" placeholder="Seu e-mail" />
-                <Input type="tel" placeholder="Seu telefone" />
-              </div>
-              <Input placeholder="Localização do projeto" />
-              <Textarea
-                placeholder="Descreva seu projeto: tipo de obra, área aproximada, prazo desejado..."
-                className="min-h-[120px]"
-              />
-              <Button className="w-full" size="lg">
-                Enviar Solicitação
-              </Button>
-            </CardContent>
-          </Card>
+          <ContactForm />
 
           {/* Informações de Contato */}
           <div className="flex flex-col md:grid md:grid-cols-2 gap-3">
