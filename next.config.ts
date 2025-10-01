@@ -53,7 +53,6 @@ const nextConfig: NextConfig = {
 
   // Otimizações experimentais
   experimental: {
-    optimizeCss: true,
     optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
   },
 };
