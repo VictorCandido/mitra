@@ -113,9 +113,12 @@ function MachineryCarousel({ machinery }: { machinery: MachineryItem }) {
           ) : (
             <Image
               src={machinery.images[currentImageIndex] || "/placeholder.svg"}
-              alt={`${machinery.name} - Imagem ${currentImageIndex + 1}`}
+              alt={`${machinery.name} - Equipamento de terraplenagem em Itupeva-SP - Imagem ${currentImageIndex + 1}`}
               fill
               className="object-cover transition-all duration-300"
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              quality={85}
             />
           )}
           {machinery.images.length > 1 && (

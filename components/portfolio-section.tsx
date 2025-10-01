@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
 
 const projects = [
   {
@@ -64,10 +65,15 @@ export function PortfolioSection() {
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="relative">
-                <img
+                <Image
                   src={project.image || "/placeholder.svg"}
-                  alt={project.title}
+                  alt={`${project.title} - Projeto de terraplenagem em ${project.location} - ${project.area} de área trabalhada`}
+                  width={400}
+                  height={192}
                   className="w-full h-48 object-cover"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  quality={85}
                 />
                 <Badge className="absolute top-3 right-3 bg-primary">{project.type}</Badge>
               </div>
