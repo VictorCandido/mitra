@@ -15,17 +15,17 @@ interface MachineryItem {
 
 const machineryData: MachineryItem[] = [
     {
-        id: "escavadeira-hidraulica-grande",
-        name: "Escavadeira Hidráulica Grande",
+        id: "escavadeira-hidraulica-14",
+        name: "Escavadeira Hidráulica 14 ton",
         description: "Equipamento versátil para escavação, demolição e movimentação de terra.",
         images: [
           "/escavadeira-grande/escavadeira-grande1.jpeg"
         ],
     },
     {
-        id: "escavadeira-hidraulica-pequena",
-        name: "Escavadeira Hidráulica Pequena",
-        description: "Ideal para trabalhos em espaços reduzidos, a escavadeira hidráulica pequena oferece alta precisão e eficiência em escavações, demolições e movimentação de terra em obras urbanas e residenciais.",
+        id: "escavadeira-hidraulica-4",
+        name: "Escavadeira Hidráulica 4 ton",
+        description: "Equipamento com versatilidade para fazer qualquer tipo de serviço, como abertura de baldrames, sapatas e perfurações.",
         images: [
           "/escavadeira-pequena/escavadeira-pequena1.jpeg", 
           "/escavadeira-pequena/escavadeira-pequena2.jpeg", 
