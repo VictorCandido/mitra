@@ -89,7 +89,6 @@ export default function RootLayout({
         <StructuredData />
       </head>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
-        DESENVOLVIMENTO
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
         <Toaster position="bottom-right" richColors />
