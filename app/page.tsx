@@ -1,3 +1,4 @@
+import { BusinessCardSection } from "@/components/business-card-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { Header } from "@/components/header"
@@ -10,6 +11,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <HeroSection />
+      <BusinessCardSection />
       <ServicesSection />
       <MachinerySection />
       {/* <PortfolioSection /> */}
