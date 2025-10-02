@@ -43,14 +43,14 @@ export function HeroSection() {
               Solicitar Orçamento
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button
+            {/* <Button
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-black bg-transparent"
               onClick={() => scrollToSection("portfolio")}
             >
               Ver Nossos Projetos
-            </Button>
+            </Button> */}
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:gap-8">

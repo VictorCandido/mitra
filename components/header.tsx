@@ -43,9 +43,9 @@ export function Header() {
             <button onClick={() => scrollToSection("maquinarios")} className="transition-colors hover:text-primary">
               Maquinários
             </button>
-            <button onClick={() => scrollToSection("portfolio")} className="transition-colors hover:text-primary">
+            {/* <button onClick={() => scrollToSection("portfolio")} className="transition-colors hover:text-primary">
               Portfólio
-            </button>
+            </button> */}
             <button onClick={() => scrollToSection("contato")} className="transition-colors hover:text-primary">
               Contato
             </button>
@@ -104,12 +104,12 @@ export function Header() {
               >
                 Maquinários
               </button>
-              <button
+              {/* <button
                 onClick={() => scrollToSection("portfolio")}
                 className="block py-2 text-lg font-medium transition-colors hover:text-primary w-full text-left"
               >
                 Portfólio
-              </button>
+              </button> */}
               <button
                 onClick={() => scrollToSection("contato")}
                 className="block py-2 text-lg font-medium transition-colors hover:text-primary w-full text-left"
