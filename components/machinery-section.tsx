@@ -51,16 +51,6 @@ const machineryData: MachineryItem[] = [
         ],
     },
     {
-        id: "rolo-compactador",
-        name: "Rolo Compactador",
-        description: "Máquina essencial para compactação de solos e pavimentos.",
-        images: [
-          "/rolo-compactador-vibratorio-trabalhando.jpg", 
-          "/rolo-compactador-compactando-asfalto.jpg", 
-          "/rolo-compactador-em-obra-rodoviaria.jpg"
-        ],
-    },
-    {
         id: "caminhao-basculante",
         name: "Caminhão Basculante",
         description: "Veículo robusto para transporte de materiais de construção.",
