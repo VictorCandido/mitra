@@ -87,6 +87,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <meta name="google-site-verification" content="SVyyElUeQUgox9W80NG4RS5_ogpLLiLEUwESayfjzwA" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <StructuredData />
       </head>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
