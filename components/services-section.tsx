@@ -20,6 +20,7 @@ const services: ServiceItem[] = [
     description: "Execução de aterros e escavações com precisão, garantindo a preparação ideal do terreno para fundações, nivelamento e obras estruturais.",
     images: [
       '/aterros-escavacoes/aterros-escavacoes1.mp4',
+      '/aterros-escavacoes/aterros-escavacoes2.mp4',
     ],
   },
   {
@@ -72,7 +73,6 @@ const services: ServiceItem[] = [
     description: "Construção de platôs nivelados e estáveis, garantindo a base necessária para edificações, condomínios, galpões e áreas industriais.",
     images: [
       '/platos/platos1.mp4',
-      '/platos/platos2.mp4',
     ],
   },
   {
