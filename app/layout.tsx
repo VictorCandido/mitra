@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: 'SVyyElUeQUgox9W80NG4RS5_ogpLLiLEUwESayfjzwA',
   },
 }
 
@@ -86,6 +86,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        <meta name="google-site-verification" content="SVyyElUeQUgox9W80NG4RS5_ogpLLiLEUwESayfjzwA" />
         <StructuredData />
       </head>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
