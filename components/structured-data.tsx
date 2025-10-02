@@ -3,7 +3,7 @@ export function StructuredData() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Terraplenagem Mitra",
-    "description": "Especialistas em terraplenagem e locação de máquinas em Itupeva-SP. Aterros, escavações, infraestrutura e equipamentos modernos. 15+ anos de experiência.",
+    "description": "Especialistas em terraplenagem e locação de máquinas em Itupeva-SP. Aterros, escavações, infraestrutura e equipamentos modernos.",
     "url": "https://terraplenagemmitra.com.br",
     "telephone": "+55-11-94762-7807",
     "email": "mitraterraplanagem@gmail.com",

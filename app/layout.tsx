@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     default: "Terraplenagem Mitra - Locações de Máquinas em Itupeva-SP",
     template: "%s | Terraplenagem Mitra"
   },
-  description: "Especialistas em terraplenagem e locação de máquinas em Itupeva-SP. Aterros, escavações, infraestrutura e equipamentos modernos. 15+ anos de experiência. Solicite seu orçamento!",
+  description: "Especialistas em terraplenagem e locação de máquinas em Itupeva-SP. Aterros, escavações, infraestrutura e equipamentos modernos. Solicite seu orçamento!",
   keywords: [
     "terraplenagem",
     "locação de máquinas",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Terraplenagem Mitra - Locações de Máquinas em Itupeva-SP",
-    description: "Especialistas em terraplenagem e locação de máquinas em Itupeva-SP. Aterros, escavações, infraestrutura e equipamentos modernos. 15+ anos de experiência.",
+    description: "Especialistas em terraplenagem e locação de máquinas em Itupeva-SP. Aterros, escavações, infraestrutura e equipamentos modernos.",
     url: 'https://mitraterraplenagem.com.br',
     siteName: 'Terraplenagem Mitra',
     images: [
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Terraplenagem Mitra - Locações de Máquinas em Itupeva-SP",
-    description: "Especialistas em terraplenagem e locação de máquinas em Itupeva-SP. 15+ anos de experiência.",
+    description: "Especialistas em terraplenagem e locação de máquinas em Itupeva-SP.",
     images: ['/capa.jpeg'],
   },
   robots: {
